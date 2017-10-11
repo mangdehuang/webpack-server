@@ -13,7 +13,7 @@ module.exports = {
         contentBase:"./public",
         historyApiFallback:false,
         inline:true,
-        hot:true,
+        // hot:true,
         port:8080
     }
 };

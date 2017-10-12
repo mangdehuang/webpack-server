@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vue-router.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>动态路由匹配</p>
+        <p>
+            <!--对应path-->
+            <!--router-link 指定对应的路径 以及传入参数-->
+            <router-link to="/user/foo">go to foo</router-link>
+            <router-link to="/user/bar">go to bar</router-link>
+            <router-link to="/user/bar/post/234">go to bar 234</router-link>
+        </p>
+
+        <!--对应最后显示的内容区域-->
+        <router-view></router-view>
+    </div>
+    <script src="../js/dyna-router.js"></script>
+</body>
+</html>

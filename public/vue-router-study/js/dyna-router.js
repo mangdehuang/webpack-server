@@ -8,7 +8,18 @@
      *
      */
     const user = {
-        template:"<div>user {{$route.params.id}} {{$route.params.post_id}}</div>"
+        template:"<div>user {{$route.params.id}} {{$route.params.post_id}}</div>",
+        beforeRouteUpdate (to,from,next) {
+            console.log(to);
+            console.log(from);
+            // console.log(next);
+        }
+        // watch:{
+        //    '$route'(to,from){
+        //        console.log(to);
+        //        console.log(from);
+        //    }
+        // }
     };
 
 

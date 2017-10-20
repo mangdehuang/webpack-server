@@ -15,12 +15,27 @@
         <!--<router-link to="/foo"></router-link>-->
 
         <!--命名路由-->
-        <router-link :to="{name:'user',params:{userId:13}}">user</router-link>
-        <router-link :to="{name:'user',params:{userId:123}}">User</router-link>
-        <router-link :to="{name:'user',params:{userId:223}}">User</router-link>
+        <!--<router-link :to="{name:'user',params:{userId:13}}">user</router-link>-->
+        <!--<router-link :to="{name:'user',params:{userId:123}}">User</router-link>-->
+        <!--<router-link :to="{name:'user',params:{userId:223}}">User</router-link>-->
+        <!--<router-view></router-view>-->
+
+        <!--命名视图-->
+        <!--<router-link to="/first">root</router-link>-->
+        <!--&lt;!&ndash;使用name 在router-view中命名 与components中的key 对应&ndash;&gt;-->
+        <!--<router-view name="a"></router-view>-->
+        <!--<router-view name="b"></router-view>-->
+
+        <!--redirect-->
+        <router-link to="/foo">foo</router-link>
+        <router-link to="/bar">bar</router-link>
+        <router-link to="/baz">baz</router-link>
+        <router-link to="/clear">clear</router-link>
         <router-view></router-view>
     </div>
 </body>
 <!--<script src="../js/children-router.js"></script>-->
-<script src="../js/router-name.js"></script>
+<!--<script src="../js/router-name.js"></script>-->
+<!--<script src="../js/name-view.js"></script>-->
+<script src="../js/redirect-router.js"></script>
 </html>

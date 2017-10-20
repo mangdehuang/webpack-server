@@ -13,6 +13,7 @@ const  user = {
 const router = new VueRouter({
     routes:[
         {
+            //path 路径必须要
             name:'user',
             path:'/user/p1/p2/p3/:userId',
             component:user,
